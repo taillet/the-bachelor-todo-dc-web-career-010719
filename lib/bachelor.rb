@@ -67,7 +67,7 @@ def get_average_age_for_season(data, season)
         end
       end
     end
-  divider= array.size+1
+  divider= array.size
   avg = number/divider
   if number%divider > 0.3
     avg += 1
