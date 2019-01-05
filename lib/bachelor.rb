@@ -58,17 +58,16 @@ end
 def get_average_age_for_season(data, season)
   array = []
   number = 0
-  num = 0
+counter=0
   data[season].each do |list|
       list.each do |attribute, stuff|
         if attribute == "age"
             number += stuff.to_i
-             array<<stuff
+             counter+=1
         end
       end
     end
-  divider= array.size
-  avg = number/divider
+  avg = number/counter
   if number%divider > 0.49
     avg += 1
   end
