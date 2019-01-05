@@ -68,8 +68,6 @@ counter=0
       end
     end
   avg = number/counter
-  if number%counter > 0.49
-    avg += 1
-  end
+
   return avg
 end
