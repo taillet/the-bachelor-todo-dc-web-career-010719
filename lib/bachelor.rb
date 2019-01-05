@@ -67,6 +67,7 @@ def get_average_age_for_season(data, season)
         end
       end
     end
-  avg = number/(array.size-1)
+    divider= array.size-1
+  avg = number/divider
   return avg.round
 end
